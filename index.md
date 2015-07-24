@@ -9,7 +9,7 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
----
+--- 
 
 ## Overview
 
@@ -17,7 +17,20 @@ This data product is created using Air passenger arrival dataset obtained from _
 
 Using the dataset, a data product is created to allow users to view and explore the dataset.
 
-A chart of Top 10 nationality of arrivals at Changi Airport, Singapore, based on a range of year between 1978-2014
+The dataset is a .csv file that will be read in, cleaned and transform to the following format:
+
+
+```r
+df<-data.frame(countries="Brunei",total="100000")
+df
+```
+
+```
+##   countries  total
+## 1    Brunei 100000
+```
+
+Lastly, a chart of Top 10 nationality of arrivals at Changi Airport, Singapore, based on a range of year between 1978-2014
 will be plotted for trend analysis as well.
 
 ---
